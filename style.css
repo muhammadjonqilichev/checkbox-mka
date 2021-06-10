@@ -1,0 +1,83 @@
+body{
+    font-family: sans-serif;
+    color: #333;
+    font-size: 32px;
+}
+.form__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.title{
+    margin-bottom: 50px;
+}
+.block{
+    width: 900px;
+    margin: 100px auto;
+}
+.label{
+    position: relative;
+    display: flex;
+    align-items: center;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+.checked{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    
+}
+
+.text{
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    margin-left: 20px;
+}
+
+.stol:checked + .checked{
+    background-image: url(./img/table-tennis.png);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: center center;
+    width: 45px;
+    height: 45px;
+    
+}
+.basketbol:disabled + .checked{
+    background-image: url(./img/basketball-ball.png);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: center center;
+    width: 45px;
+    height: 45px;
+    
+}
+.basketbol{
+    opacity: .5;
+}
+
+.volleybol:checked + .checked{
+    background-image: url(./img/volleyball-ball.png);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: center center;
+    width: 45px;
+    height: 45px;
+    
+}
+
+.hokkey:disabled ~ .text{
+    color: #ccc;
+}
+.hokkey:disabled + .checked{
+    color: #ccc;
+    opacity: .6;
+}
